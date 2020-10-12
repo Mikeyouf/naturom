@@ -17,7 +17,7 @@ class NavbarThree extends Component {
   }
   render() {
     // const { mainlogo } = this.props;
-    const { pathName } = this.props
+    const { location } = this.props
     // console.log(location)
     return (
       <React.Fragment>
@@ -38,7 +38,9 @@ class NavbarThree extends Component {
                 <div className="menu_right">
                   <div
                     className="burger_menu"
-                    style={{ color: pathName === "/" ? "#ffffff" : "black" }}
+                    style={{
+                      color: location.pathname === "/" ? "#ffffff" : "black",
+                    }}
                   >
                     <span className="text" data-text="menu"></span>
                     <div
@@ -49,32 +51,38 @@ class NavbarThree extends Component {
                     >
                       <span
                         style={{
-                          background: pathName === "/" ? "#ffffff" : "black",
+                          background:
+                            location.pathname === "/" ? "#ffffff" : "black",
                         }}
                       ></span>
                       <span
                         style={{
-                          background: pathName === "/" ? "#ffffff" : "black",
+                          background:
+                            location.pathname === "/" ? "#ffffff" : "black",
                         }}
                       ></span>
                       <span
                         style={{
-                          background: pathName === "/" ? "#ffffff" : "black",
+                          background:
+                            location.pathname === "/" ? "#ffffff" : "black",
                         }}
                       ></span>
                       <span
                         style={{
-                          background: pathName === "/" ? "#ffffff" : "black",
+                          background:
+                            location.pathname === "/" ? "#ffffff" : "black",
                         }}
                       ></span>
                       <span
                         style={{
-                          background: pathName === "/" ? "#ffffff" : "black",
+                          background:
+                            location.pathname === "/" ? "#ffffff" : "black",
                         }}
                       ></span>
                       <span
                         style={{
-                          background: pathName === "/" ? "#ffffff" : "black",
+                          background:
+                            location.pathname === "/" ? "#ffffff" : "black",
                         }}
                       ></span>
                     </div>
@@ -105,49 +113,49 @@ class NavbarThree extends Component {
             <div className="off_menu">
               <ul id="menu" className="nav">
                 <li data-menuanchor="Presentation" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#Presentation">Présentation</a>
                   ) : (
                     <AnchorLink to="/#Presentation">Présentation</AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Propos" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#A-Propos">A propos</a>
                   ) : (
                     <AnchorLink to="/#A-Propos">A propos</AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Prestations" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#Prestations">Prestations</a>
                   ) : (
                     <AnchorLink to="/#Prestations">Prestations</AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Naturopathie" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#Naturopathie">Naturopathie</a>
                   ) : (
                     <AnchorLink to="/#Naturopathie">Naturopathie</AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Fleurs" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#Fleurs">Fleurs de Bach</a>
                   ) : (
                     <AnchorLink to="/#Fleurs">Fleurs</AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Article" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#Article">Dernier article</a>
                   ) : (
                     <AnchorLink to="/#Article">Dernier article</AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Contact" className="">
-                  {pathName === "/" ? (
+                  {location.pathname === "/" ? (
                     <a href="#Contact">Contact</a>
                   ) : (
                     <AnchorLink to="/#Contact">Contact</AnchorLink>

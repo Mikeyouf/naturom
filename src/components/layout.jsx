@@ -19,7 +19,7 @@ const Layout = ({ children, className, location }) => {
   // const { siteTitle } = site.siteMetadata
   return (
     <>
-      <NavbarThree mainlogo="logo-naturo.png" pathName={location.pathname} />
+      <NavbarThree mainlogo="logo-naturo.png" location={location} />
       {location.pathname === "/" ? (
         <div
           className="primary-container section_bg"
