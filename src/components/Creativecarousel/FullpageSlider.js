@@ -7,6 +7,7 @@ import SectionFour from "./SectionFour"
 import SectionNaturopathe from "./SectionNaturopathe"
 import SectionFleurs from "./SectionFleurs"
 import jhonData from "../jhonData"
+import SectionBlog from "./SectionBlog"
 
 const FullpageSlider = fullpageProps => {
   return (
@@ -21,6 +22,7 @@ const FullpageSlider = fullpageProps => {
               <SectionThree />
               <SectionNaturopathe />
               <SectionFleurs />
+              <SectionBlog data={fullpageProps.data} />
               <SectionFour jhonData={jhonData} />
             </React.Fragment>
           )

@@ -139,6 +139,13 @@ class NavbarThree extends Component {
                     <AnchorLink to="/#Fleurs">Fleurs</AnchorLink>
                   )}
                 </li>
+                <li data-menuanchor="Article" className="">
+                  {pathName === "/" ? (
+                    <a href="#Article">Dernier article</a>
+                  ) : (
+                    <AnchorLink to="/#Article">Dernier article</AnchorLink>
+                  )}
+                </li>
                 <li data-menuanchor="Contact" className="">
                   {pathName === "/" ? (
                     <a href="#Contact">Contact</a>
@@ -146,7 +153,7 @@ class NavbarThree extends Component {
                     <AnchorLink to="/#Contact">Contact</AnchorLink>
                   )}
                 </li>
-                <li data-menuanchor="Contact" className="">
+                <li data-menuanchor="Blog" className="">
                   <Link to="/blog">Blog</Link>
                 </li>
               </ul>
