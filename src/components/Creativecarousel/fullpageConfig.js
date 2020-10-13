@@ -6,4 +6,5 @@ export default {
     navigationPosition: "left",
     scrollOverflow: true,
     arrowNavigation: true,
+    responsiveWidth: 900,
 };

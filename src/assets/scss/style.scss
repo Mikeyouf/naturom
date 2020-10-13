@@ -7,6 +7,22 @@
 // 	grid-template-rows: 60px auto 60px;
 // 	min-height: 100vh;
 // }
+@media (max-width: $breakpoint-md) {
+    body {
+        background: linear-gradient( 90deg, #255559 0%, #4e8f93 100%);
+        .menu_right {
+            position: fixed;
+            top: 20px;
+            right: 10px;
+            .text {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 .primary-container main {
     min-height: 100vh;
 }
@@ -436,7 +452,8 @@ article img {
         }
     }
     @media (max-width: $breakpoint-md) {
-        padding: 50px 0 ul {
+        padding: 50px 0;
+        ul {
             display: flex;
             justify-content: space-between;
         }
@@ -470,7 +487,7 @@ article img {
     @media (max-width: 1400px) {
         padding: 20px 10px;
     }
-    @media (max-width: 767px) {
+    @media (max-width: $breakpoint-md) {
         padding: 20px 0px;
     }
     .menu_right {
@@ -955,7 +972,7 @@ article img {
 }
 
 .memphis {
-    @media (max-width: 576px) {
+    @media (max-width: 900px) {
         display: none;
     }
     li {

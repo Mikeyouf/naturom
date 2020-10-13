@@ -30,6 +30,7 @@ const Layout = ({ children, className, location }) => {
             width: "100%",
             top: "0",
             left: "0",
+            bottom: "0",
             zIndex: "-10",
           }}
         >
