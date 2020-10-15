@@ -28,7 +28,7 @@ class NavbarThree extends Component {
                 <div className="menu_left">
                   <a href="/" className="logo">
                     <img
-                      src={require("../../image/logo-naturo.png")}
+                      src={require("../../image/logo-naturo-2.png")}
                       alt="logo"
                     />
                   </a>

@@ -3,9 +3,9 @@
         "title": "Naturaum",
         "titleTemplate": "%s",
         "description": "Un site de présentation des prestations de naturopathe d'Alisson. Fait avec ❤ par Mik@el",
-        "siteUrl": "https://foundation.stackrole.com",
-        "image": "/assets/stackrole.png",
-        "twitterUsername": "@stackrole"
+        "siteUrl": "https://naturehome.netlify.app",
+        "image": "/image/logo-naturo-2.png",
+        "twitterUsername": "@Mikeyouf"
     },
     "ga": "UA-XXXXXXXXX-X"
 }

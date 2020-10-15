@@ -78,11 +78,11 @@ module.exports = {
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
-                name: `Foundation`,
-                short_name: `Foundation`,
+                name: `Naturaum`,
+                short_name: `Naturaum`,
                 start_url: `/`,
                 background_color: `#f7f0eb`,
-                theme_color: `#a2466c`,
+                theme_color: `#255559`,
                 display: `standalone`,
                 icon: `static/assets/stackrole.png`,
             },

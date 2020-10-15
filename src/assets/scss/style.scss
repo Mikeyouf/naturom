@@ -23,6 +23,12 @@
     }
 }
 
+header {
+    .menu_left {
+        margin-top: 10px;
+    }
+}
+
 .primary-container main {
     min-height: 100vh;
 }
@@ -481,7 +487,7 @@ article img {
     position: absolute;
     width: 100%;
     left: 0;
-    top: 0;
+    top: 100px;
     padding: 50px 25px;
     z-index: 100;
     @media (max-width: 1400px) {
