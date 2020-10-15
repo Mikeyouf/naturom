@@ -84,7 +84,7 @@ module.exports = {
                 background_color: `#f7f0eb`,
                 theme_color: `#255559`,
                 display: `standalone`,
-                icon: `static/assets/stackrole.png`,
+                icon: `static/assets/logo-naturo-2.png`,
             },
         },
         'gatsby-plugin-offline',

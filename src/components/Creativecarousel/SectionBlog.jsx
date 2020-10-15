@@ -8,8 +8,12 @@ const charPoses = {}
 class SectionBlog extends Component {
   render() {
     const { data } = this.props
-    const { markdownRemark } = data // data.markdownRemark holds your post data
-    const { frontmatter, html } = markdownRemark
+    console.log("section blog : ", data[0])
+    // const { markdownRemark } = data // data.markdownRemark holds your post data
+    const { frontmatter, excerpt } = data[0]
+    // const frontmatter = data[0].frontmatter
+    // const html = data[0].html
+    console.log("frontmatter : ", frontmatter)
     const Image = frontmatter.featuredImage
       ? frontmatter.featuredImage.childImageSharp.fluid
       : ""
@@ -23,18 +27,18 @@ class SectionBlog extends Component {
                   <h6>
                     <span className="br"></span>
                     <SplitText charPoses={charPoses}>
-                      {frontmatter.title}
+                      {frontmatter.date}
                     </SplitText>
                   </h6>
                   <h2>
                     <SplitText charPoses={charPoses}>
-                      {frontmatter.tagline}
+                      {frontmatter.title}
                     </SplitText>
                   </h2>
-                  <p dangerouslySetInnerHTML={{ __html: html }} />
-                  <Link to={frontmatter.cta.ctaLink} className="button">
-                    {frontmatter.cta.ctaText}
-                    <span class="icon -right">
+                  <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+                  <Link to={frontmatter.slug} className="button">
+                    Découvrir le blog
+                    <span className="icon -right">
                       <RiArrowRightSLine />
                     </span>
                   </Link>

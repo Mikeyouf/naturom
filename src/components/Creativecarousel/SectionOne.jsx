@@ -27,7 +27,7 @@ class SectionOne extends Component {
                     à renforcer les défenses de l'organisme par des moyens
                     considérés comme naturels et biologiques.
                   </p>
-                  <a href="#/" className="see_btn" data-text="See Projects">
+                  <a href="/blog" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
                     <span className="arrow">
                       <span className="line"></span>

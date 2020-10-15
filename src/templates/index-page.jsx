@@ -5,31 +5,29 @@ import SEO from "../components/seo"
 import { Creativecarousel } from "./Creative-carousel"
 
 export const pageQuery = graphql`
-  query HomeQuery($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        title
-        tagline
-        featuredImage {
-          childImageSharp {
-            fluid(
-              maxWidth: 480
-              maxHeight: 380
-              quality: 80
-              srcSetBreakpoints: [960, 1440]
-            ) {
-              ...GatsbyImageSharpFluid
-            }
-            sizes {
-              src
+  query HomeQuery {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { template: { eq: "blog-post" } } }
+      limit: 1
+    ) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 200)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            slug
+            title
+            featuredImage {
+              childImageSharp {
+                fluid(maxWidth: 540, maxHeight: 360, quality: 80) {
+                  ...GatsbyImageSharpFluid
+                  ...GatsbyImageSharpFluidLimitPresentationSize
+                }
+              }
             }
           }
-        }
-        cta {
-          ctaText
-          ctaLink
         }
       }
     }
@@ -37,10 +35,14 @@ export const pageQuery = graphql`
 `
 
 const HomePage = ({ data, location }) => {
+  const posts = data.allMarkdownRemark.edges
+    .filter(edge => !!edge.node.frontmatter.date)
+    .map(edge => edge.node)
+  console.log(posts)
   return (
     <Layout className="main-page" location={location}>
       <SEO />
-      <Creativecarousel data={data} />
+      <Creativecarousel data={posts} />
     </Layout>
   )
 }
