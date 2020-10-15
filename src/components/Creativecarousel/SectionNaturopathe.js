@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import SplitText from "react-pose-text";
-const charPoses = {};
+import React, { Component } from "react"
+import SplitText from "react-pose-text"
+const charPoses = {}
 
 class SectionOne extends Component {
   render() {
     return (
-      <div className="section fp-section fp-tabble section_one">
+      <div className="section fp-section fp-tabble fp-auto-height-responsive">
         <div className="slider_container">
           <div className="container">
             <div className="row align-items-center">
@@ -21,8 +21,9 @@ class SectionOne extends Component {
                     </SplitText>
                   </h2>
                   <p>
-                  La Naturopathie est un ensemble de pratiques visant à aider l’organisme à 
-                  guérir de lui-même, par des moyens exclusivement naturels.
+                    La Naturopathie est un ensemble de pratiques visant à aider
+                    l’organisme à guérir de lui-même, par des moyens
+                    exclusivement naturels.
                   </p>
                   {/* <a href="#/" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
@@ -45,8 +46,8 @@ class SectionOne extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SectionOne;
+export default SectionOne

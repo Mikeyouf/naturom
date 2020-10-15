@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import Reveal from "react-reveal/Reveal/";
-import Form from "../Form";
-import "./style.scss";
+import React, { Component } from "react"
+import Reveal from "react-reveal/Reveal/"
+import Form from "../Form"
+import "./style.scss"
 
 class SectionFour extends Component {
   render() {
-    let jhonData = this.props.jhonData;
+    let jhonData = this.props.jhonData
     return (
-      <div className="section fp-section fp-tabble section_one contact-area">
+      <div className="section fp-section fp-tabble section_one fp-auto-height-responsive  contact-area">
         <div className="slider_container">
           <div className="container">
             <div className="row row-reverse">
               {jhonData.contact &&
-                jhonData.contact.map((item) => {
+                jhonData.contact.map(item => {
                   return (
                     <React.Fragment key={item.id}>
                       <div className="col-md-5">
@@ -20,7 +20,7 @@ class SectionFour extends Component {
                           <div className="contact_info">
                             <h4>{item.title}</h4>
                             <ul className="nav">
-                              {item.menuItems.map((info) => {
+                              {item.menuItems.map(info => {
                                 return (
                                   <li className="item" key={info.id}>
                                     <div className="media">
@@ -32,14 +32,14 @@ class SectionFour extends Component {
                                       </div>
                                     </div>
                                   </li>
-                                );
+                                )
                               })}
                             </ul>
                           </div>
                         </Reveal>
                       </div>
                     </React.Fragment>
-                  );
+                  )
                 })}
               <div className="col-md-7">
                 <Reveal effect="fadeInRight" duration={800}>
@@ -53,8 +53,8 @@ class SectionFour extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SectionFour;
+export default SectionFour

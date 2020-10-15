@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import SplitText from "react-pose-text";
-import "./style.scss";
+import React, { Component } from "react"
+import SplitText from "react-pose-text"
+import "./style.scss"
 
-const charPoses = {};
+const charPoses = {}
 class SectionThree extends Component {
   render() {
     return (
-      <div className="section fp-section fp-tabble section_one">
+      <div className="section fp-section fp-tabble fp-auto-height-responsive  section_one">
         <div className="slider_container">
           <div className="container">
             <div className="row align-items-center">
@@ -22,7 +22,8 @@ class SectionThree extends Component {
                     </SplitText>
                   </h2>
                   <p>
-                    Naturopathie, Fleurs de Bach, Massage bien-être, Réflexologie plantaires.
+                    Naturopathie, Fleurs de Bach, Massage bien-être,
+                    Réflexologie plantaires.
                   </p>
                   <a href="#/" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
@@ -45,8 +46,8 @@ class SectionThree extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SectionThree;
+export default SectionThree

@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import SplitText from "react-pose-text";
-import "./style.scss";
+import React, { Component } from "react"
+import SplitText from "react-pose-text"
+import "./style.scss"
 
-const charPoses = {};
+const charPoses = {}
 
 class SectionTwo extends Component {
   render() {
     return (
-      <div className="section fp-section fp-tabble">
+      <div className="section fp-section fp-tabble fp-auto-height-responsive ">
         <div className="slider_container">
           <div className="container">
             <div className="row align-items-center">
@@ -18,16 +18,15 @@ class SectionTwo extends Component {
                     <SplitText charPoses={charPoses}>Qui suis-je ?</SplitText>
                   </h6>
                   <h2>
-                    <SplitText charPoses={charPoses}>
-                      Allison
-                    </SplitText>
+                    <SplitText charPoses={charPoses}>Allison</SplitText>
                   </h2>
                   <h2 className="bold">
                     <SplitText charPoses={charPoses}>Naturopathe</SplitText>
                   </h2>
                   <p>
-                    Diplômée de la Haute école de Naturopathe, je vous propose un accompagnement au naturel
-                    dans la prise en charge de vos maux.
+                    Diplômée de la Haute école de Naturopathe, je vous propose
+                    un accompagnement au naturel dans la prise en charge de vos
+                    maux.
                   </p>
                   <a href="#/" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
@@ -50,8 +49,8 @@ class SectionTwo extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SectionTwo;
+export default SectionTwo

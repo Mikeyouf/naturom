@@ -58,7 +58,7 @@ class SectionBlog extends Component {
       ? frontmatter.featuredImage.childImageSharp.fluid
       : ""
     return (
-      <div className="section fp-section fp-tabble section_one">
+      <div className="section fp-section fp-tabble fp-auto-height-responsive">
         <div className="slider_container">
           <div className="container">
             <div className="row align-items-center">

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import SplitText from "react-pose-text";
-const charPoses = {};
+import React, { Component } from "react"
+import SplitText from "react-pose-text"
+const charPoses = {}
 
 class SectionOne extends Component {
   render() {
     return (
-      <div className="section fp-section fp-tabble section_one">
+      <div className="section fp-section fp-tabble section_one fp-auto-height-responsive ">
         <div className="slider_container">
           <div className="container">
             <div className="row align-items-center">
@@ -13,7 +13,9 @@ class SectionOne extends Component {
                 <div className="slider_content">
                   <h6>
                     <span className="br"></span>
-                    <SplitText charPoses={charPoses}>Allison Naturopathe</SplitText>
+                    <SplitText charPoses={charPoses}>
+                      Allison Naturopathe
+                    </SplitText>
                   </h6>
                   <h2>
                     <SplitText charPoses={charPoses}>
@@ -21,8 +23,9 @@ class SectionOne extends Component {
                     </SplitText>
                   </h2>
                   <p>
-                  La Naturopathie est un ensemble de méthodes de soins visant à renforcer les défenses 
-                  de l'organisme par des moyens considérés comme naturels et biologiques.
+                    La Naturopathie est un ensemble de méthodes de soins visant
+                    à renforcer les défenses de l'organisme par des moyens
+                    considérés comme naturels et biologiques.
                   </p>
                   <a href="#/" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
@@ -45,8 +48,8 @@ class SectionOne extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SectionOne;
+export default SectionOne

@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import SplitText from "react-pose-text";
-const charPoses = {};
+import React, { Component } from "react"
+import SplitText from "react-pose-text"
+const charPoses = {}
 
 class SectionOne extends Component {
   render() {
     return (
-      <div className="section fp-section fp-tabble section_one">
+      <div className="section fp-section fp-tabble fp-auto-height-responsive">
         <div className="slider_container">
           <div className="container">
             <div className="row align-items-center">
@@ -21,9 +21,10 @@ class SectionOne extends Component {
                     </SplitText>
                   </h2>
                   <p>
-                  Les fleurs de Bach désignent des élixirs floraux créés par le Dr Bach au XIXe siècle. 
-                  Ses 38 élixirs aident à traiter les états émotionnels négatifs comme le stress ou les 
-                  troubles du sommeil.
+                    Les fleurs de Bach désignent des élixirs floraux créés par
+                    le Dr Bach au XIXe siècle. Ses 38 élixirs aident à traiter
+                    les états émotionnels négatifs comme le stress ou les
+                    troubles du sommeil.
                   </p>
                   {/* <a href="#/" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
@@ -46,8 +47,8 @@ class SectionOne extends Component {
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default SectionOne;
+export default SectionOne
