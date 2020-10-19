@@ -1,5 +1,5 @@
 import React from "react"
-import "fullpage.js/vendors/scrolloverflow"
+// import "fullpage.js/vendors/scrolloverflow"
 import ReactFullpage from "@fullpage/react-fullpage"
 import SectionOne from "./SectionOne"
 import SectionTwo from "./SectionTwo"
