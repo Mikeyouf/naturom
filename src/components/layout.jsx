@@ -25,7 +25,7 @@ const Layout = ({ children, className, location }) => {
           className="primary-container section_bg"
           style={{
             background: "linear-gradient( 90deg, #255559 0%, #4e8f93 100%)",
-            position: "absolute",
+            // position: "absolute",
             height: "100%",
             width: "100%",
             top: "0",

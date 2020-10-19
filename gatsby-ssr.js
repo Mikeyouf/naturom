@@ -10,7 +10,7 @@ exports.onRenderBody = ({ setHeadComponents }, pluginOptions) => {
     <script
       key="2"
       type="text/javascript"
-      src="vendors/scrolloverflow.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.min.js"
     />,
   ])
 }

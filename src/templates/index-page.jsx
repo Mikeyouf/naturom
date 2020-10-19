@@ -38,7 +38,6 @@ const HomePage = ({ data, location }) => {
   const posts = data.allMarkdownRemark.edges
     .filter(edge => !!edge.node.frontmatter.date)
     .map(edge => edge.node)
-  console.log(posts)
   return (
     <Layout className="main-page" location={location}>
       <SEO />

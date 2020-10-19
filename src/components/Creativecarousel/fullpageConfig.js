@@ -5,6 +5,14 @@ export default {
     navigation: true,
     navigationPosition: "left",
     scrollOverflow: true,
+    // scrollOverflowOptions: {
+    //     click: false,
+    //     preventDefaultException: {
+    //         tagName: {
+    //             tagName: /.*/
+    //         },
+    //     }
+    // },
     arrowNavigation: true,
     responsiveWidth: 900,
 };

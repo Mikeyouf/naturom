@@ -1,5 +1,7 @@
 import React from "react"
 import emailjs from "emailjs-com"
+import { init } from "emailjs-com"
+init("user_IQA3Kt9CTe6MruRw8BFf2")
 
 class Form extends React.Component {
   constructor(props) {
@@ -10,6 +12,7 @@ class Form extends React.Component {
         subject: "",
         phone: "",
         email: "",
+        message: "",
       },
     }
   }
@@ -31,6 +34,10 @@ class Form extends React.Component {
         errors.phone =
           value.length < 5 ? "Veuillez renseigner votre téléphone" : ""
         break
+      case "message":
+        errors.message =
+          value.length < 5 ? "Veuillez renseigner votre téléphone" : ""
+        break
       case "email":
         errors.email = value.length < 5 ? "Veuillez renseigner le titre" : ""
         let appos = value.indexOf("@")
@@ -45,7 +52,7 @@ class Form extends React.Component {
       default:
         break
     }
-    this.setState({ errors, [name]: value })
+    this.setState({ errors, [name]: value.toLowerCase() })
   }
 
   submitHandler = e => {
@@ -61,12 +68,7 @@ class Form extends React.Component {
     //   alert("form is invalid");
     // }
     emailjs
-      .sendForm(
-        "gmail",
-        "template_zo1q2mh",
-        e.target,
-        "user_IQA3Kt9CTe6MruRw8BFf2"
-      )
+      .sendForm("service_lzca9sr", "template_d07mbbi", e.target)
       .then(
         result => {
           console.log(result.text)
@@ -76,6 +78,16 @@ class Form extends React.Component {
           console.log(error.text)
           alert("Formulaire invalide")
         }
+      )
+      .then(
+        this.setState({
+          errors: "",
+          email: "",
+          name: "",
+          phone: "",
+          message: "",
+          subject: "",
+        })
       )
   }
 
@@ -92,6 +104,7 @@ class Form extends React.Component {
               className="form-control"
               placeholder="Votre nom*"
               onChange={this.handleChange}
+              // value={name}
             />
             <p>{errors.name}</p>
           </div>
@@ -103,6 +116,7 @@ class Form extends React.Component {
               name="email"
               placeholder="Votre Email*"
               onChange={this.handleChange}
+              // value={email}
             />
             <p>{errors.email}</p>
           </div>
@@ -114,6 +128,7 @@ class Form extends React.Component {
               className="form-control"
               placeholder="Titre*"
               onChange={this.handleChange}
+              // value={subject}
             />
             <p>{errors.subject}</p>
           </div>
@@ -125,6 +140,7 @@ class Form extends React.Component {
               name="phone"
               placeholder="Téléphone*"
               onChange={this.handleChange}
+              // value={phone}
             />
             <p>{errors.phone}</p>
           </div>
@@ -136,7 +152,9 @@ class Form extends React.Component {
           rows="6"
           placeholder="Votre Message ..."
           onChange={this.handleChange}
+          // value={message}
         ></textarea>
+        {/* <p>{errors.message}</p> */}
         <button type="submit" className="btn send_btn theme_btn">
           Envoyer le message
         </button>
