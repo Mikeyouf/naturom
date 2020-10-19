@@ -7,7 +7,7 @@ class SectionFour extends Component {
   render() {
     let jhonData = this.props.jhonData
     return (
-      <div className="section fp-section fp-tabble section_one fp-auto-height-responsive  contact-area">
+      <div className="section fp-section fp-tabble fp-auto-height-responsive  contact-area">
         <div className="slider_container">
           <div className="container">
             <div className="row row-reverse">

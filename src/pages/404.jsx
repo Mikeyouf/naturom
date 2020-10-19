@@ -21,7 +21,7 @@ const NotFound = ({ location }) => (
             color: "var(--primary-color)",
           }}
         />
-        <h1>Oops we did not expect that to happen</h1>
+        <h1>Oups, cette page n'existe pas.</h1>
         <p>
           Have you wondered into the unknow. Let us help you, Please take a look
           at below options
@@ -29,10 +29,10 @@ const NotFound = ({ location }) => (
       </header>
       <Link to="/" className="button">
         <RiArrowLeftSLine className="icon -left" />
-        Back to Homepage
+        Retour à la page d'accueil
       </Link>
       <Link to="/contact" className="button -outline">
-        Report this <RiBugLine className="icon -right" />
+        Contactez nous <RiBugLine className="icon -right" />
       </Link>
     </div>
   </Layout>

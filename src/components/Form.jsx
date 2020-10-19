@@ -1,9 +1,9 @@
-import React from "react";
-import emailjs from "emailjs-com";
+import React from "react"
+import emailjs from "emailjs-com"
 
 class Form extends React.Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       errors: {
         name: "",
@@ -11,43 +11,45 @@ class Form extends React.Component {
         phone: "",
         email: "",
       },
-    };
+    }
   }
 
-  handleChange = (event) => {
-    let name = event.target.name;
-    let value = event.target.value;
-    let errors = this.state.errors;
+  handleChange = event => {
+    let name = event.target.name
+    let value = event.target.value
+    let errors = this.state.errors
 
     switch (name) {
       case "name":
-        errors.name = value.length === 0 ? "Name is not empty" : "";
-        break;
+        errors.name = value.length === 0 ? "Veuillez renseigner votre nom" : ""
+        break
       case "subject":
-        errors.subject = value.length < 5 ? "Subject must be 5 characters" : "";
-        break;
+        errors.subject =
+          value.length < 5 ? "Le titre doit faire 5 caractères minimum" : ""
+        break
       case "phone":
-        errors.phone = value.length < 5 ? "phone is not empty" : "";
-        break;
+        errors.phone =
+          value.length < 5 ? "Veuillez renseigner votre téléphone" : ""
+        break
       case "email":
-        errors.email = value.length < 5 ? "Subject is not empty" : "";
-        let appos = value.indexOf("@");
-        let dots = value.lastIndexOf(".");
+        errors.email = value.length < 5 ? "Veuillez renseigner le titre" : ""
+        let appos = value.indexOf("@")
+        let dots = value.lastIndexOf(".")
 
         if (appos < 1 || dots - appos < 2) {
-          errors.email = "please enter valid email";
+          errors.email = "Svp, entrez un email valide"
         }
 
-        break;
+        break
 
       default:
-        break;
+        break
     }
-    this.setState({ errors, [name]: value });
-  };
+    this.setState({ errors, [name]: value })
+  }
 
-  submitHandler = (e) => {
-    e.preventDefault();
+  submitHandler = e => {
+    e.preventDefault()
     // if (
     //   this.state.errors.name.length === 0 &&
     //   this.state.errors.subject.length === 0 &&
@@ -63,22 +65,22 @@ class Form extends React.Component {
         "gmail",
         "template_zo1q2mh",
         e.target,
-        "user_vvQtVRIgqRETJC2JHOJz9"
+        "user_IQA3Kt9CTe6MruRw8BFf2"
       )
       .then(
-        (result) => {
-          console.log(result.text);
-          alert("form is valid");
+        result => {
+          console.log(result.text)
+          alert("Formulaire validé")
         },
-        (error) => {
-          console.log(error.text);
-          alert("form is invalid");
+        error => {
+          console.log(error.text)
+          alert("Formulaire invalide")
         }
-      );
-  };
+      )
+  }
 
   render() {
-    const { errors } = this.state;
+    const { errors } = this.state
     return (
       <form onSubmit={this.submitHandler.bind(this)} className="form_class">
         <div className="row">
@@ -139,8 +141,8 @@ class Form extends React.Component {
           Envoyer le message
         </button>
       </form>
-    );
+    )
   }
 }
 
-export default Form;
+export default Form
