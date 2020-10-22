@@ -28,7 +28,7 @@ class NavbarThree extends Component {
                 <div className="menu_left">
                   <a href="/" className="logo">
                     <img
-                      src={require("../../image/logo-naturo-2.png")}
+                      src={require("../../image/logo-naturo-4.png")}
                       alt="logo"
                     />
                   </a>
@@ -36,12 +36,7 @@ class NavbarThree extends Component {
               </div>
               <div className="col-sm-3 col-5">
                 <div className="menu_right">
-                  <div
-                    className="burger_menu"
-                    // style={{
-                    //   color: location.pathname === "/" ? "#ffffff" : "#1a292b",
-                    // }}
-                  >
+                  <div className="burger_menu">
                     <span className="text" data-text="menu"></span>
                     <div
                       id="nav-icon2"
@@ -49,42 +44,12 @@ class NavbarThree extends Component {
                       className={this.state.isExpanded ? "open" : ""}
                       onClick={() => this.handleToggle()}
                     >
-                      <span
-                      // style={{
-                      //   background:
-                      //     location.pathname === "/" ? "#ffffff" : "#1a292b",
-                      // }}
-                      ></span>
-                      <span
-                      // style={{
-                      //   background:
-                      //     location.pathname === "/" ? "#ffffff" : "#1a292b",
-                      // }}
-                      ></span>
-                      <span
-                      // style={{
-                      //   background:
-                      //     location.pathname === "/" ? "#ffffff" : "#1a292b",
-                      // }}
-                      ></span>
-                      <span
-                      // style={{
-                      //   background:
-                      //     location.pathname === "/" ? "#ffffff" : "#1a292b",
-                      // }}
-                      ></span>
-                      <span
-                      // style={{
-                      //   background:
-                      //     location.pathname === "/" ? "#ffffff" : "#1a292b",
-                      // }}
-                      ></span>
-                      <span
-                      // style={{
-                      //   background:
-                      //     location.pathname === "/" ? "#ffffff" : "#1a292b",
-                      // }}
-                      ></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
                     </div>
                   </div>
                 </div>
