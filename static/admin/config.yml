@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: GitHub
   repo: Mikeyouf/naturom
   branch: main
   commit_messages:
