@@ -28,7 +28,7 @@ class NavbarThree extends Component {
                 <div className="menu_left">
                   <a href="/" className="logo">
                     <img
-                      src={require("../../image/logo-naturo-4.png")}
+                      src={require("../../image/logo-naturo-4-maron.png")}
                       alt="logo"
                     />
                   </a>
@@ -133,8 +133,14 @@ class NavbarThree extends Component {
             </div>
             <div className="copy_right_menu">
               <p>
-                © <a href="/#">Onaturel</a> 2020. Tout droits réservé crée par
-                Mik@el
+                © Onaturel 2020. Tout droits réservé crée par
+                <a
+                  href="/https://www.antoine-mikael.fr/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Mik@el
+                </a>
               </p>
             </div>
           </div>

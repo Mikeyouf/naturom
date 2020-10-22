@@ -1009,6 +1009,7 @@ article img {
                 p {
                     color: #fff;
                     margin-left: 10px;
+                    font-family: "Poppins", sans-serif;
                 }
                 .logo-whatsapp {
                     display: flex;
@@ -1256,17 +1257,28 @@ article img {
         p {
             font-size: 15px;
             line-height: 25px;
+            color: #255559;
         }
     }
     .nav {
         display: block;
         li {
             display: block;
+            transition: all 0.3s ease;
             a {
                 padding-bottom: 0;
                 font-size: 16px;
                 font-weight: 600;
                 color: #3a3a45;
+                transition: all 0.3s ease;
+                &:hover {
+                    color: #C8AA6F;
+                    transition: all 0.3s ease;
+                }
+            }
+            &:hover {
+                transform: scaleY(1.1) translateX(10px);
+                transition: all 0.3s ease;
             }
             &+li {
                 margin-top: 10px;
@@ -1278,8 +1290,10 @@ article img {
         font-size: 15px;
         line-height: 22px;
         margin-top: 80px;
+        color: #255559;
         a {
-            color: #797979;
+            color: #C8AA6F;
+            margin-left: 4px;
         }
     }
 }

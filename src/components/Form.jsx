@@ -170,7 +170,7 @@ class Form extends React.Component {
               className="logo-whatsapp"
             >
               <img
-                src={require("../image/logo-whatsapp-blanc.png")}
+                src={require("../image/logo-whatsapp-call-blanc.png")}
                 alt="logo whatsapp"
               />
               <p>WhatsApp</p>
