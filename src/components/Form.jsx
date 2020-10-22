@@ -1,6 +1,7 @@
 import React from "react"
 import emailjs from "emailjs-com"
 import { init } from "emailjs-com"
+// import logoWhatsapp from "../image/whatsapp-logo.jpg"
 init("user_IQA3Kt9CTe6MruRw8BFf2")
 
 class Form extends React.Component {
@@ -155,9 +156,27 @@ class Form extends React.Component {
           // value={message}
         ></textarea>
         {/* <p>{errors.message}</p> */}
-        <button type="submit" className="btn send_btn theme_btn">
-          Envoyer le message
-        </button>
+        <div className="row">
+          <div className="col-lg-6">
+            <button type="submit" className="btn send_btn theme_btn">
+              Envoyer le message
+            </button>
+          </div>
+          <div className="col-lg-6 whatsapp">
+            <a
+              href="https://api.whatsapp.com/send?phone=33652124432"
+              target="_blank"
+              rel="noreferrer"
+              className="logo-whatsapp"
+            >
+              <img
+                src={require("../image/logo-whatsapp-blanc.png")}
+                alt="logo whatsapp"
+              />
+              <p>WhatsApp</p>
+            </a>
+          </div>
+        </div>
       </form>
     )
   }

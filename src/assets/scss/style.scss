@@ -19,7 +19,8 @@ body {
             top: 20px;
             right: 10px;
             .text {
-                &:after {
+                &:after,
+                &:before {
                     display: none;
                 }
             }
@@ -497,7 +498,7 @@ article img {
     left: 0;
     top: 100px;
     padding: 50px 25px;
-    z-index: 100;
+    z-index: 200;
     @media (max-width: 1400px) {
         padding: 20px 10px;
     }
@@ -507,6 +508,7 @@ article img {
     .menu_right {
         display: flex;
         justify-content: flex-end;
+        z-index: 200;
         .burger_menu {
             font-size: 13px;
             font-weight: 600;
@@ -562,6 +564,7 @@ article img {
     .menu_right {
         display: flex;
         justify-content: flex-end;
+        // z-index: 200;
         .burger_menu {
             font-size: 13px;
             font-weight: 600;
@@ -731,7 +734,7 @@ article img {
             transition: all 0.2s linear;
             color: #fff;
             font-family: "Poppins", sans-serif;
-            z-index: 1000;
+            z-index: 10;
         }
         h6 {
             font-size: 14px;
@@ -774,7 +777,7 @@ article img {
             color: #fff;
             font-weight: 600;
             position: relative;
-            z-index: 1000;
+            z-index: 10;
             transition: all 0.2s linear;
             .arrow {
                 height: 16px;
@@ -983,6 +986,33 @@ article img {
                     border-color: #040c2c;
                 }
             }
+            .whatsapp {
+                display: flex;
+                justify-content: flex-end;
+                p {
+                    color: #fff;
+                    margin-left: 10px;
+                }
+                .logo-whatsapp {
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.3s ease-out;
+                    &:hover {
+                        transform: scale(1.2) rotate(15deg);
+                        transition: all 0.3s ease-in;
+                    }
+                }
+                @media (max-width: 900px) {
+                    .logo-whatsapp {
+                        position: fixed;
+                        bottom: 20px;
+                        right: 20px;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
@@ -1167,7 +1197,7 @@ article img {
     padding: 80px 55px 55px;
     overflow-y: scroll;
     transition: all 600ms linear;
-    z-index: 1000;
+    z-index: 10;
     left: auto;
     right: -100%;
     @media (max-width: 576px) {
