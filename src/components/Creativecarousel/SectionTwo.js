@@ -28,7 +28,7 @@ class SectionTwo extends Component {
                     un accompagnement au naturel dans la prise en charge de vos
                     maux.
                   </p>
-                  <a href="#/" className="see_btn" data-text="See Projects">
+                  <a href="/blog" className="see_btn" data-text="See Projects">
                     Découvrez mes prestations
                     <span className="arrow">
                       <span className="line"></span>

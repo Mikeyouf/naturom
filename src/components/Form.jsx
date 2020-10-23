@@ -105,6 +105,7 @@ class Form extends React.Component {
               className="form-control"
               placeholder="Votre nom*"
               onChange={this.handleChange}
+              required
               // value={name}
             />
             <p>{errors.name}</p>
@@ -117,6 +118,7 @@ class Form extends React.Component {
               name="email"
               placeholder="Votre Email*"
               onChange={this.handleChange}
+              required
               // value={email}
             />
             <p>{errors.email}</p>
@@ -129,6 +131,7 @@ class Form extends React.Component {
               className="form-control"
               placeholder="Titre*"
               onChange={this.handleChange}
+              required
               // value={subject}
             />
             <p>{errors.subject}</p>
@@ -141,6 +144,7 @@ class Form extends React.Component {
               name="phone"
               placeholder="Téléphone*"
               onChange={this.handleChange}
+              required
               // value={phone}
             />
             <p>{errors.phone}</p>
@@ -153,6 +157,7 @@ class Form extends React.Component {
           rows="6"
           placeholder="Votre Message ..."
           onChange={this.handleChange}
+          required
           // value={message}
         ></textarea>
         {/* <p>{errors.message}</p> */}
