@@ -1,22 +1,9 @@
 import React from "react"
-// import { useStaticQuery, graphql } from "gatsby"
 import NavbarThree from "./Navbar/NavbarThree"
 
 import "../assets/scss/style.scss"
 
-// const query = graphql`
-//   query LayoutQuery {
-//     site {
-//       siteMetadata {
-//         siteTitle: title
-//       }
-//     }
-//   }
-// `
-
 const Layout = ({ children, className, location }) => {
-  // const { site } = useStaticQuery(query)
-  // const { siteTitle } = site.siteMetadata
   return (
     <>
       <NavbarThree mainlogo="logo-naturo.png" location={location} />
@@ -25,7 +12,6 @@ const Layout = ({ children, className, location }) => {
           className="primary-container section_bg"
           style={{
             background: "linear-gradient( 90deg, #255559 0%, #4e8f93 100%)",
-            // position: "absolute",
             height: "100%",
             width: "100%",
             top: "0",

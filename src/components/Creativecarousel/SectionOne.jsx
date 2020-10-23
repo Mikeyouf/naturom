@@ -40,7 +40,7 @@ class SectionOne extends Component {
                   <span></span>
                   <img
                     src={require("../../image/new-page/home-5.png")}
-                    alt=""
+                    alt="naturopathie"
                   />
                 </div>
               </div>

@@ -8,11 +8,13 @@ const charPoses = {}
 class SectionBlog extends Component {
   render() {
     const { data } = this.props
+    // console.log("data : ", data)
     // const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, excerpt } = data[0]
     const Image = frontmatter.featuredImage
       ? frontmatter.featuredImage.childImageSharp.fluid
       : ""
+    // console.log("image : ", Image)
     return (
       <div className="section fp-section fp-tabble fp-auto-height-responsive">
         <div className="slider_container">

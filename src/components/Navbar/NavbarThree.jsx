@@ -16,9 +16,7 @@ class NavbarThree extends Component {
     })
   }
   render() {
-    // const { mainlogo } = this.props;
     const { location } = this.props
-    // console.log(location)
     return (
       <React.Fragment>
         <header className="header_area_one p_absoulte">
