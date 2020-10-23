@@ -20,9 +20,9 @@ collections:
     label: "Posts" # Used in the UI
     label_singular: "Post" # Used in the UI, ie: "New Post"
     description: >
-      Create awesome content here.
+      Crée tes articles ici
     folder: "src/content/posts"
-    slug: "{{year}}-{{month}}-{{day}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     summary: "{{title}} — {{year}}/{{month}}/{{day}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
@@ -32,24 +32,28 @@ collections:
           widget: "hidden",
           default: "blog-post",
         }
-      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Titre", name: "title", widget: "string", tagname: "h1" }
       - {
-          label: "Slug",
+          label: "Nom de l'url",
           name: "slug",
           widget: "string",
-          hint: "Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.",
+          hint: "TOUJOURS commencer avec /. Utiliser uniquement des caractères alpha-numérique, - et _. AUCUN espace entre les lettres ou mots.",
         }
       - {
-          label: "Publish Date",
+          label: "Date de publication",
           name: "date",
           widget: "datetime",
           dateFormat: "YYYY-MM-DD",
           timeFormat: "HH:mm",
           format: "YYYY-MM-DD HH:mm",
         }
-      - { label: "SEO Description", name: "description", widget: "text" }
       - {
-          label: "Featured Image",
+          label: "Description pour les moteurs de recherche",
+          name: "description",
+          widget: "text",
+        }
+      - {
+          label: "Image de présetnation",
           name: "featuredImage",
           widget: "image",
           required: false,
@@ -57,10 +61,10 @@ collections:
         }
 
       - {
-          label: "Body",
+          label: "Article",
           name: "body",
           widget: "markdown",
-          hint: "Main content goes here.",
+          hint: "Le principal de l'article se trouve ici.",
         }
   - label: "Pages"
     name: "pages"
