@@ -3,11 +3,11 @@ backend:
   repo: Mikeyouf/naturom
   branch: main
   commit_messages:
-    create: "Create {{collection}} “{{slug}}”"
-    update: "Update {{collection}} “{{slug}}”"
-    delete: "Delete {{collection}} “{{slug}}”"
-    uploadMedia: "[skip ci] Upload “{{path}}”"
-    deleteMedia: "[skip ci] Delete “{{path}}”"
+    create: "Creation de {{collection}} “{{slug}}”"
+    update: "Mise à jour de {{collection}} “{{slug}}”"
+    delete: "Mit à la corbeille: {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] mit à jour “{{path}}”"
+    deleteMedia: "[skip ci] effacé “{{path}}”"
 
 # Uncomment local_backend when you need to develop in your local
 #local_backend: true # run npx netlify-cms-proxy-server for local testing
@@ -53,7 +53,7 @@ collections:
           widget: "text",
         }
       - {
-          label: "Image de présetnation",
+          label: "Image de présentation",
           name: "featuredImage",
           widget: "image",
           required: false,
