@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 import { RiArrowRightSLine } from "react-icons/ri"
 import SplitText from "react-pose-text"
 const charPoses = {}
@@ -8,13 +7,10 @@ const charPoses = {}
 class SectionBlog extends Component {
   render() {
     const { data } = this.props
-    // console.log("data : ", data)
-    // const { markdownRemark } = data // data.markdownRemark holds your post data
     const { frontmatter, excerpt } = data[0]
     const Image = frontmatter.featuredImage
       ? frontmatter.featuredImage.childImageSharp.fluid
       : ""
-    // console.log("image : ", Image)
     return (
       <div className="section fp-section fp-tabble fp-auto-height-responsive">
         <div className="slider_container">
@@ -45,7 +41,8 @@ class SectionBlog extends Component {
               <div className="col-lg-6">
                 <div className="slider_image_inner">
                   <span></span>
-                  {Image ? (
+                  <img src={Image.src} alt="naturopathie" />
+                  {/* {Image ? (
                     <Img
                       fluid={Image}
                       alt={frontmatter.title + " - Featured image"}
@@ -53,7 +50,7 @@ class SectionBlog extends Component {
                     />
                   ) : (
                     ""
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>

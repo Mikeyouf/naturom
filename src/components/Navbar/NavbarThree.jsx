@@ -77,51 +77,100 @@ class NavbarThree extends Component {
               <ul id="menu" className="nav">
                 <li data-menuanchor="Presentation" className="">
                   {location.pathname === "/" ? (
-                    <a href="#Presentation">Présentation</a>
+                    <a href="#Presentation" onClick={() => this.handleToggle()}>
+                      Présentation
+                    </a>
                   ) : (
-                    <AnchorLink to="/#Presentation">Présentation</AnchorLink>
+                    <AnchorLink
+                      to="/#Presentation"
+                      onClick={() => this.handleToggle()}
+                    >
+                      Présentation
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Propos" className="">
                   {location.pathname === "/" ? (
-                    <a href="#A-Propos">A propos</a>
+                    <a href="#A-Propos" onClick={() => this.handleToggle()}>
+                      A propos
+                    </a>
                   ) : (
-                    <AnchorLink to="/#A-Propos">A propos</AnchorLink>
+                    <AnchorLink
+                      to="/#A-Propos"
+                      onClick={() => this.handleToggle()}
+                    >
+                      A propos
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Prestations" className="">
                   {location.pathname === "/" ? (
-                    <a href="#Prestations">Prestations</a>
+                    <a href="#Prestations" onClick={() => this.handleToggle()}>
+                      Prestations
+                    </a>
                   ) : (
-                    <AnchorLink to="/#Prestations">Prestations</AnchorLink>
+                    <AnchorLink
+                      to="/#Prestations"
+                      onClick={() => this.handleToggle()}
+                    >
+                      Prestations
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Naturopathie" className="">
                   {location.pathname === "/" ? (
-                    <a href="#Naturopathie">Naturopathie</a>
+                    <a href="#Naturopathie" onClick={() => this.handleToggle()}>
+                      Naturopathie
+                    </a>
                   ) : (
-                    <AnchorLink to="/#Naturopathie">Naturopathie</AnchorLink>
+                    <AnchorLink
+                      to="/#Naturopathie"
+                      onClick={() => this.handleToggle()}
+                    >
+                      Naturopathie
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Fleurs" className="">
                   {location.pathname === "/" ? (
-                    <a href="#Fleurs">Fleurs de Bach</a>
+                    <a href="#Fleurs" onClick={() => this.handleToggle()}>
+                      Fleurs de Bach
+                    </a>
                   ) : (
-                    <AnchorLink to="/#Fleurs">Fleurs</AnchorLink>
+                    <AnchorLink
+                      to="/#Fleurs"
+                      onClick={() => this.handleToggle()}
+                    >
+                      Fleurs
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Article" className="">
                   {location.pathname === "/" ? (
-                    <a href="#Article">Dernier article</a>
+                    <a href="#Article" onClick={() => this.handleToggle()}>
+                      Dernier article
+                    </a>
                   ) : (
-                    <AnchorLink to="/#Article">Dernier article</AnchorLink>
+                    <AnchorLink
+                      to="/#Article"
+                      onClick={() => this.handleToggle()}
+                    >
+                      Dernier article
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Contact" className="">
                   {location.pathname === "/" ? (
-                    <a href="#Contact">Contact</a>
+                    <a href="#Contact" onClick={() => this.handleToggle()}>
+                      Contact
+                    </a>
                   ) : (
-                    <AnchorLink to="/#Contact">Contact</AnchorLink>
+                    <AnchorLink
+                      to="/#Contact"
+                      onClick={() => this.handleToggle()}
+                    >
+                      Contact
+                    </AnchorLink>
                   )}
                 </li>
                 <li data-menuanchor="Blog" className="">
